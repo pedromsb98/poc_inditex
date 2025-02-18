@@ -14,7 +14,7 @@ public class OrderService {
     }
 
     public List<Order> getAllOrders() {
-        return orderRepository.findAll();
+        return orderRepository.findAll(); //TODO:Filtrar las ordenes anteriores a 2024
     }
 
     public Order getOrderById(Long id) {
