@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:latest
+    environment:
+      POSTGRES_USER: inditex
+      POSTGRES_PASSWORD: inditex
+      POSTGRES_DB: poc
+    ports:
+      - "5432:5432"
