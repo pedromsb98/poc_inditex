@@ -1,0 +1,14 @@
+package com.inditex.poc.model;
+
+import jakarta.persistence.*;
+import lombok.Data;
+
+@Entity
+@Data
+public class Inventory {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+    private String productName;
+    private int quantity;
+}
